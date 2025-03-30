@@ -78,7 +78,23 @@ function wish_me(){
          } else if(message.includes("open whatsapp")){
         speak("opening  whatsapp");
         window.open("whatsapp://");
-         }  else if(message.includes("open camera")){
+         }  
+        
+        else if(message.includes("open camera")){
+        speak("opening  camera");
+        window.open("camera://");
+         }
+            else if(message.includes("open gallery")){
+        speak("opening  gallery");
+        window.open("gallery://");
+         } 
+                else if(message.includes("open snapchat")){
+        speak("opening  snapchat");
+        window.open("snapchat://");
+         }
+        
+        
+        else if(message.includes("open camera")){
             speak("opening  camera");
             window.open("camera://");
          }  else if(message.includes("what is time")){
@@ -86,9 +102,9 @@ function wish_me(){
             speak(time);
          } 
         
-        // else if("can  speak"){
-        // //     speak(" okey "+message.replace("can you speak",""));
-        // }
+         else if("can  speak"){
+             speak(" okkey "+message.replace("can you speak",""));
+         }
 
         // other any que saathi google la connect 
         else {

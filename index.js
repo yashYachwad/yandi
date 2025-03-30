@@ -42,7 +42,7 @@ function wish_me(){
     recognition.onresult=(event)=>{
         let currentIndex=event.resultIndex; 
         let transcript = event.results[currentIndex][0].transcript;
-        content.innerText=transcript+message.replace("say"."");
+        content.innerText=transcript;
         // console.log(event);
         takeCommand(transcript.toLowerCase());
     }

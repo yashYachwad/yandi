@@ -105,7 +105,7 @@ function wish_me(){
 
         // other any que saathi google la connect 
         else if(message.inlcudes("what is ")) {  
-            let finalText = "this is what I found on internet regarding"+ message.replace("yanndi","") || "this is what i found on internet regarding " + message.replace("yandi","");
+            let finalText = "this is what I found on internet regarding"+ message.replace("yanndi","") ;
             speak(finalText);
             window.open(`https://www.google.com/search?q=${message.replace("yanndi","")}`,"blank");
         }

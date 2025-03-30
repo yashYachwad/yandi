@@ -29,7 +29,7 @@ function wish_me(){
         speak("good evening everyone ,click the button to ask questions");
     } 
 }
-    window.addEventListener("load",()=>{
+    window.addEventListener('unload',()=>{
         wish_me()
         voice.style.display= "none";
     });

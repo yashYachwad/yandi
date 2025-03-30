@@ -99,7 +99,7 @@ function wish_me(){
             speak(time);
          } 
         
-         else if("can you speak"){
+         else if(message.includes("can you speak")){
              speak(" okkey "+message.replace("can you speak",""));
          }
 

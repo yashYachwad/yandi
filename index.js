@@ -60,6 +60,7 @@ function wish_me(){
         btn.style.display="flex";
         voice.style.display="none";
         if(message.includes("hello")){
+            wish_me();
             speak("Hello Guys, How can I help you");
         } else if (message.includes("who are you") || message.includes("hu r u")){
             speak("   I am Yannddi, A virtual AI model, made by yash, using, HTML, CSS, JavaScript");

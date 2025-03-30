@@ -88,7 +88,7 @@ function wish_me(){
          } 
         
       else if(message.includes("say")){
-             speak(" okey "+message.replace("say",""));
+             speak(" Okey "+message.replace("say",""));
        }
 
         // other any que saathi google la connect 

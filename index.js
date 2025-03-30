@@ -80,34 +80,31 @@ function wish_me(){
         window.open("whatsapp://");
          }  
         
-        else if(message.includes("open camera")){
-        speak("opening  camera");
-        window.open("camera://");
-         }
-            else if(message.includes("open gallery")){
-        speak("opening  gallery");
-        window.open("gallery://");
-         } 
+        // else if(message.includes("open camera")){
+        //  speak("opening  camera");
+        // window.open("camera://");
+        //  }
+        //     else if(message.includes("open gallery")){
+        // speak("opening  gallery");
+        // window.open("gallery://");
+        //  }
                 else if(message.includes("open snapchat")){
         speak("opening  snapchat");
         window.open("snapchat://");
          }
         
         
-        else if(message.includes("open camera")){
-            speak("opening  camera");
-            window.open("camera://");
-         }  else if(message.includes("what is time")){
+     else if(message.includes("time right now")){
             let time= new Date().toLocaleString(undefined,{hour: "numeric",minute:"numeric"});
             speak(time);
          } 
         
-         else if("can  speak"){
+         else if("can you speak"){
              speak(" okkey "+message.replace("can you speak",""));
          }
 
         // other any que saathi google la connect 
-        else {
+        else if("what is ") {  
             let finalText = "this is what I found on internet regarding"+ message.replace("yanndi","");
             speak(finalText);
             window.open(`https://www.google.com/search?q=${message.replace("yanndi","")}`,"blank");

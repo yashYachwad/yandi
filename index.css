@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Gorditas:wght@400;700&family=Protest+Guerrilla&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*this is for mobiles , max 400px width. tachya nanter mobile sodun laptop saathi*/
+@media screen and (max-width :400px ) {
+  
+
+    h2{
+        color: white;
+        font-family:'Protest Guerrilla', sans-serif;
+        font-weight: 50;
+        font-style:normal;
+        align-items: center;
+    }
+    #yandi{
+        font-size: 30px;
+        color: rgb(243, 20, 142);
+    }
+    #va{
+        color: aqua;
+        font-size: 25px;
+    }
+    #btn{
+        margin-top: 5px;
+        display: flex;
+        color: white;
+        justify-content:space-evenly;
+        align-items: center;
+        height: 40px;
+        width: 300px;
+        border-radius: 30px;
+        background: linear-gradient(to right,aqua, rgb(243,20, 157));
+    }
+    
+    #voice{
+        margin-top:35px;
+        height: 100px;
+        width: 100px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+    }
+
+}
+
+/*laptop=====================================================================*/
+
+
+@media screen and (min-width :401px ) {
+
+h2{
+    color: white;
+    margin-top: 30px;
+    font-family:'Protest Guerrilla', sans-serif;
+    font-weight: 400;
+    font-style:normal;
+}
+#yandi{
+    color: rgb(243, 20, 142);
+    font-size: 40px;
+}
+#va{
+    color: aqua;
+    font-size: 35px;
+}
+#btn{
+    margin-top: 5px;
+    display: flex;
+    color: white;
+    justify-content:space-around;
+    align-items: center;
+    height: 40px;
+    width: 400px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(to right,aqua, rgb(243,20, 157));
+    transition: all;
+}
+#btn:hover{
+    cursor: pointer;
+    width: 405px;
+    word-spacing: 5px; 
+    border: 2px solid skyblue ;
+    box-shadow: 2px 2px 40px ,aqua, 2px 2px 40px,red;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+ }
+#text{
+    color: white;
+}
+
+#voice{
+    margin-top:35px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+}

@@ -17,7 +17,7 @@ function speak(text){
 
 // new function for wish me
 
-function wish_me(){
+function wish_me()=>{
     let day= new Date();
     let hours= day.getHours();
 
